@@ -1,0 +1,29 @@
+.paper {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border-color: var(--app-ash);
+  padding-left: calc(var(--mantine-spacing-xl) + rem(10px));
+}
+
+.paper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: rem(6px);
+  background-color: var(--mantine-color-pine-6);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--mantine-spacing-md);
+}
+
+.title {
+  letter-spacing: -0.01em;
+}
