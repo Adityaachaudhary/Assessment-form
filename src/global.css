@@ -1,0 +1,10 @@
+:root {
+  --app-ink: #1b2420;
+  --app-fog: #edefea;
+  --app-ash: #c7ccc3;
+}
+
+body {
+  background-color: var(--app-fog);
+  color: var(--app-ink);
+}
