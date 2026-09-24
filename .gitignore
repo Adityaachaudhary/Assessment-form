@@ -130,3 +130,9 @@ dist
 .pnp.*
 
 .DS_Store
+
+# Vitest output
+.vitest/
+
+# npm lock (project uses yarn)
+package-lock.json

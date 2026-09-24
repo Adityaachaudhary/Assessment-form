@@ -117,20 +117,13 @@ export function AssessmentForm({ onSave = defaultSave }: AssessmentFormProps) {
                 label="Barthel Index"
                 description="0 to 100, in steps of 5. Higher means more independent."
                 step={5}
-                min={0}
-                max={100}
                 {...form.getInputProps('barthelIndex')}
               />
             </Stack>
 
             <Stack gap="md">
               <Divider label="Medication & care" labelPosition="left" />
-              <NumberInput
-                label="Regular medications"
-                min={0}
-                max={30}
-                {...form.getInputProps('medicationCount')}
-              />
+              <NumberInput label="Regular medications" {...form.getInputProps('medicationCount')} />
               <Checkbox
                 label="Pharmacist review requested"
                 {...form.getInputProps('pharmacistReviewRequested', { type: 'checkbox' })}

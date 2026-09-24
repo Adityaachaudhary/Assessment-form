@@ -9,7 +9,7 @@ export type Mobility = (typeof MOBILITY)[number];
  * a fresh Mantine `NumberInput` starts as `''`, not a number, and a fresh
  * `Select` starts as `''`, not a valid `Mobility`. `Assessment` can't
  * represent those empty states, so the form is typed against this shape and
- * `zodResolver` is what turns a filled-in `AssessmentFormValues` into a
+ * `schemaResolver` is what turns a filled-in `AssessmentFormValues` into a
  * validated `Assessment` on submit.
  */
 export interface AssessmentFormValues {

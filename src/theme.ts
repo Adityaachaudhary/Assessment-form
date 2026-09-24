@@ -16,7 +16,7 @@ const pine: MantineColorsTuple = [
 ];
 
 // A muted brick red, standing in for Mantine's default "red" so every
-// built-in error state (inputs, the zodResolver messages) picks this up
+// built-in error state (inputs, the schemaResolver messages) picks this up
 // automatically, with no per-field color choices in the component.
 const brick: MantineColorsTuple = [
   '#f7eae6',

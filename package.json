@@ -41,6 +41,11 @@
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.1",
     "@vitejs/plugin-react": "^6.0.0",
+    "@vitest/expect": "5.0.1",
+    "@vitest/mocker": "5.0.1",
+    "@vitest/pretty-format": "5.0.1",
+    "@vitest/spy": "5.0.1",
+    "@vitest/utils": "5.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jsdom": "^30.0.0",
     "oxc-config-mantine": "^1.0.0",
@@ -55,6 +60,7 @@
     "stylelint-config-standard-scss": "^17.0.0",
     "typescript": "7.0.2",
     "vite": "^8.0.0",
+    "vite-tsconfig-paths": "^6.1.1",
     "vitest": "^5.0.0"
   },
   "packageManager": "yarn@4.18.0"
