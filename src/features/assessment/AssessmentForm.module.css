@@ -4,6 +4,7 @@
   background-color: #fff;
   border-color: var(--app-ash);
   padding-left: calc(var(--mantine-spacing-xl) + rem(10px));
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
 .paper::before {
@@ -19,11 +20,21 @@
 .header {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: var(--mantine-spacing-md);
+  padding-bottom: var(--mantine-spacing-md);
+  border-bottom: rem(1px) solid var(--app-ash);
 }
 
 .title {
   letter-spacing: -0.01em;
+}
+
+.sectionLabel {
+  font-size: var(--mantine-font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--mantine-color-pine-7);
 }

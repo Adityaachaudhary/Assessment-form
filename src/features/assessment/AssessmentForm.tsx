@@ -84,7 +84,10 @@ export function AssessmentForm({ onSave = defaultSave }: AssessmentFormProps) {
         <form onSubmit={form.onSubmit(handleSubmit)}>
           <Stack gap="xl" mt="xl">
             <Stack gap="md">
-              <Divider label="Patient identification" labelPosition="left" />
+              <Divider
+                label={<span className={classes.sectionLabel}>Patient identification</span>}
+                labelPosition="left"
+              />
               <TextInput
                 label="Medical record number"
                 placeholder="MRN-004821"
@@ -99,7 +102,10 @@ export function AssessmentForm({ onSave = defaultSave }: AssessmentFormProps) {
             </Stack>
 
             <Stack gap="md">
-              <Divider label="Visit details" labelPosition="left" />
+              <Divider
+                label={<span className={classes.sectionLabel}>Visit details</span>}
+                labelPosition="left"
+              />
               <SimpleGrid cols={{ base: 1, sm: 2 }}>
                 <DateInput
                   label="Assessment date"
@@ -122,8 +128,15 @@ export function AssessmentForm({ onSave = defaultSave }: AssessmentFormProps) {
             </Stack>
 
             <Stack gap="md">
-              <Divider label="Medication & care" labelPosition="left" />
-              <NumberInput label="Regular medications" {...form.getInputProps('medicationCount')} />
+              <Divider
+                label={<span className={classes.sectionLabel}>Medication &amp; care</span>}
+                labelPosition="left"
+              />
+              <NumberInput
+                label="Regular medications"
+                description="Count of medicines taken regularly, including prescribed and over-the-counter."
+                {...form.getInputProps('medicationCount')}
+              />
               <Checkbox
                 label="Pharmacist review requested"
                 {...form.getInputProps('pharmacistReviewRequested', { type: 'checkbox' })}
@@ -131,7 +144,10 @@ export function AssessmentForm({ onSave = defaultSave }: AssessmentFormProps) {
             </Stack>
 
             <Stack gap="md">
-              <Divider label="Follow-up & consent" labelPosition="left" />
+              <Divider
+                label={<span className={classes.sectionLabel}>Follow-up &amp; consent</span>}
+                labelPosition="left"
+              />
               <DateInput
                 label="Next review date"
                 valueFormat="DD MMM YYYY"
